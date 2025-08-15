@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPick"
+            android:text="Seleziona foto/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnPickFolder"
+            android:text="Seleziona cartella (immagini + video)"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtCount"
+            android:text="0 elementi selezionati"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd"
+            android:layout_marginTop="12dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <Switch
+                android:id="@+id/swPin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proteggi con PIN" />
+
+            <EditText
+                android:id="@+id/edtPin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:hint="PIN (4–6 cifre)"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:text="Avvia server (foreground)"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:text="Ferma server"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtUrl"
+            android:text="URL: —"
+            android:textIsSelectable="true"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgQr"
+            android:contentDescription="QR URL"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"/>
+    </LinearLayout>
+</ScrollView>
