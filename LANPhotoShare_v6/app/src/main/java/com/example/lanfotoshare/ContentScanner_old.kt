@@ -1,6 +1,5 @@
 package com.example.lanfotoshare
-
-import android.content.ContentResolver
+import android.content.ContentRever
 import android.net.Uri
 import androidx.documentfile.provider.DocumentFile
 
@@ -24,3 +23,5 @@ object ContentScanner {
         return out
     }
 }
+
+
